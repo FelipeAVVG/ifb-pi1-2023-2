@@ -112,3 +112,36 @@ footer {
     width: 100%;
 }
 
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    #nav-topo {
+        padding: 10px;
+    }
+
+    a {
+        margin-right: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    #pag-main {
+        padding: 20px;
+    }
+
+    .card {
+        width: 48%; 
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .card {
+        width: 100%; 
+    }
+}
