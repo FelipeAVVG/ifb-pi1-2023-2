@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {}
+
+header {
+    background: linear-gradient(to bottom, #50077C, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 600px;
+    height: auto;
+}
+
+#nav-topo {
+    height: 40px;
+    background-color: #500770;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+a {
+    font: 1.3em 'Langar', sans-serif;
+    text-decoration: none;
+    color: #FFF903;
+    margin-right: 50px;
+}
+
+main {
+    height: auto;
+}
+
+h2{
+	color: #500770;
+	font: 2em 'Langar', cursive;
+	margin-bottom: 20px;
+	text-align: center;
+	margin: 100px 0 100px 0;
+}
+
+#h2_base{
+	margin-top: 0px;
+}
+
+h3{
+	color: #500770;
+	font: 1em 'Langar', cursive;
+	margin-bottom: 20px;
+}
+
+#pag-main{
+	background-color: #eeeeee;
+	padding: 50px 100px;
+}
+
+.container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.card{
+	background-color: #fff;
+	width: 24%;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px #E1BEE7;
+	transition: 0.5s;
+}
+
+.card:hover{
+	box-shadow: 10px 10px 10px #500770;
+}
+
+.img-card{
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+
+.texto-card{
+	padding: 10px;
+}
+
+footer {
+    height: 50px;
+    background-color: #500770;
+    clear: both;
+    font: 1.2em 'Langar', sans-serif;
+    color: #FFF903;
+    text-align: center;
+}
+
+#bt-topo {
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 35px;
+}
+
+.img-btn{
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    #nav-topo {
+        padding: 10px;
+    }
+
+    a {
+        margin-right: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    #pag-main {
+        padding: 20px;
+    }
+
+    .card {
+        width: 48%; 
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .card {
+        width: 100%; 
+    }
+}
