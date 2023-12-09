@@ -15,7 +15,7 @@ header {
 }
 
 img {
-    width: 600px;
+    max-width: 100%;
     height: auto;
 }
 
@@ -90,12 +90,20 @@ h3{
 }
 
 footer {
-    height: 50px;
+    height: 100px;
     background-color: #500770;
     clear: both;
     font: 1.2em 'Langar', sans-serif;
     color: #FFF903;
     text-align: center;
+    padding: 5px;
+    justify-content: space-between;
+    
+}
+
+.a-footer{
+    margin-top: 15px;
+    margin: 5px;
 }
 
 #bt-topo {
@@ -113,35 +121,25 @@ footer {
 }
 
 
-@media only screen and (max-width: 768px) {
-    header {
-        padding: 10px;
-    }
+/*  CONTEUDO RESPONSIVO  */
 
-    #nav-topo {
-        padding: 10px;
-    }
-
-    a {
-        margin-right: 10px;
-    }
-
-    main {
+@media screen and (max-width: 1074px){
+    #disp-mobile{
+        display: flex;
+        height: 60px;
+        background-color: #500770;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        text-align: center;
         padding: 20px;
+
     }
 
-    #pag-main {
-        padding: 20px;
+    #menu{
+        justify-content: space-around; 
     }
 
-    .card {
-        width: 48%; 
-    }
-}
+    
 
-
-@media only screen and (max-width: 480px) {
-    .card {
-        width: 100%; 
-    }
 }
