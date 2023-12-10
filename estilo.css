@@ -29,6 +29,17 @@ img {
     padding: 20px;
 }
 
+a.menu{
+    font: 1.3em 'Langar', sans-serif;
+    text-decoration: none;
+    color: #FFF903;
+    margin: 0 15px;
+}
+
+a.menu:last-child {
+    margin-right: 0;
+}
+
 a {
     font: 1.3em 'Langar', sans-serif;
     text-decoration: none;
@@ -123,9 +134,9 @@ footer {
 
 /*  CONTEUDO RESPONSIVO  */
 
-@media screen and (max-width: 1074px){
+@media screen and (max-width: 768px){
     #disp-mobile{
-        display: flex;
+        display: block;
         height: 60px;
         background-color: #500770;
         position: sticky;
@@ -133,11 +144,45 @@ footer {
         z-index: 1;
         text-align: center;
         padding: 20px;
-
+        margin: 15px 0;
     }
 
     #menu{
         justify-content: space-around; 
+    }
+    
+    #nav-topo {
+        height: 80px;
+        background-color: #500770;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card{
+        background-color: #fff;
+        width: calc(50% - 20px);
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px #E1BEE7;
+        transition: 0.5s;
+        margin-bottom: 20px;
+    }
+
+    .card:hover{
+        box-shadow: 10px 10px 10px #500770;
+    }
+
+    .img-card{
+        width: 100%;
+        border-radius: 10px 10px 0 0;
     }
 
     
