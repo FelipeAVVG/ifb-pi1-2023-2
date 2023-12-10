@@ -130,8 +130,9 @@ footer {
     color: #FFF903;
     text-align: center;
     padding: 5px;
-    justify-content: space-between;
-    
+    justify-content: center;
+    display: flex;
+    align-items: center;    
 }
 
 .a-footer{
